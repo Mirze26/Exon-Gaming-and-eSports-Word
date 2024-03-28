@@ -1,0 +1,295 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+}
+
+
+
+header {
+    width: 85%;
+    height: 90px;
+    background-color: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(40px);
+    z-index: 999;
+    position: absolute;
+    left: 50%;
+    top: 40px;
+    transform: translate(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+
+
+
+    .logo {
+        width: 70px;
+        height: 60%;
+    }
+
+    .nav-logo {
+        transition: 0.5s;
+    }
+
+    .menu-logo:hover .nav-logo {
+        fill: white;
+    }
+
+    svg {
+        width: 54px;
+        height: 39px;
+        stroke: white;
+        fill: transparent;
+
+
+    }
+
+    .nav-menu {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .nav-menu a {
+        position: relative;
+        text-align: center;
+        width: 140px;
+        font-family: "Oxanium", sans-serif;
+        font-size: 1em;
+        font-weight: 500;
+        padding: 35px;
+        color: #fff;
+        z-index: 1;
+        text-decoration: none;
+
+    }
+
+
+    .nav-menu a:hover {
+
+        background-color: rgba(255, 255, 255, 0.08);
+
+
+    }
+
+
+
+
+
+
+}
+
+
+#slider-back {
+
+    width: 100%;
+    height: 100vh;
+    position: relative;
+
+
+
+    .swiper {
+        width: 100%;
+        height: 100%;
+        z-index: -999;
+    }
+
+    .swiper-slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .sliderOne-text-two {
+        width: 800px;
+        height: 100px;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: 1;
+        margin: auto;
+        transition: 0.3s;
+        animation: slider-text 5s ease infinite;
+    }
+
+
+
+
+    .sliderOne-btn {
+        width: 150px;
+        height: 45px;
+        border: none;
+        color: white;
+        font-family: "Sora", sans-serif;
+        font-weight: 300;
+        font-size: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        position: absolute;
+        top: 75%;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        animation: slider-text 5s ease;
+        background-color: rgba(255, 255, 255, 0.08);
+        backdrop-filter: blur(40px);
+        clip-path: polygon(7% 0, 100% 0%, 100% 0, 100% 94%, 93% 100%, 0 100%, 0% 80%, 0 25%);
+        transition: 0.5s;
+        background-size: 200% auto;
+        background-image: linear-gradient(to right, #383838 0%, #474747 51%, #0010f5 100%);
+        animation: slider-text 5s ease infinite;
+        cursor: pointer;
+    }
+
+   
+
+   
+    .btn-svg {
+        fill: white;
+        width: 14px;
+        height: 17px;
+
+    }
+
+
+
+    .sliderOne-btn:hover {
+        background-position: right center;
+    }
+
+    .sliderTwo-text-box {
+        width: 100%;
+        height: 30vh;
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        z-index: 1;
+        transform: translate(-50%, -50%);
+        overflow: hidden;
+    }
+
+    .sliderTwo-text-one {
+        width: 800px;
+        height: 100px;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: 1;
+        margin: auto;
+        transition: 0.3s;
+        animation: slider-text 5s ease infinite;
+    }
+
+
+    .sliderThree-btn {
+        width: 150px;
+        height: 45px;
+        border: none;
+        color: white;
+        font-family: "Sora", sans-serif;
+        font-weight: 300;
+        font-size: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        position: absolute;
+        top: 70%;
+        left: -68%;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        animation: slider-text 5s ease;
+        background-color: rgba(255, 255, 255, 0.08);
+        backdrop-filter: blur(40px);
+        clip-path: polygon(7% 0, 100% 0%, 100% 0, 100% 94%, 93% 100%, 0 100%, 0% 80%, 0 25%);
+        transition: 0.5s;
+        background-size: 200% auto;
+        background-image: linear-gradient(to right, #383838 0%, #474747 51%, #0010f5 100%);
+        animation: slider-text 5s ease infinite;
+        cursor: pointer;
+    }
+
+    .sliderThree-box {
+        position: absolute;
+        width: 29%;
+        height: 29vh;
+        top: 50%;
+        left: 10%;
+        font-size: 45px;
+        font-family: "Oxanium", sans-serif;
+        font-weight: 600;
+        color: white;
+        overflow: hidden;
+
+        p {
+            animation: slider-text 5s ease infinite;
+        }
+    }
+
+
+
+    .sliderOne-text-box {
+        width: 100%;
+        height: 30vh;
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        z-index: 1;
+        transform: translate(-50%, -50%);
+        overflow: hidden;
+    }
+
+
+    .sliderOne-text-one {
+        width: 200px;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: 1;
+        margin: auto;
+        animation: slider-text 5s ease infinite;
+    }
+
+
+
+
+}
+
+
+@keyframes slider-text {
+    0% {
+        transform: translateY(80%);
+    }
+
+
+    50%,
+    60% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+
+
+
+    100% {
+        transform: translateY(-200%);
+        opacity: 0;
+    }
+
+}
